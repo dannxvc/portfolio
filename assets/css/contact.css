@@ -1,0 +1,60 @@
+#contact>h2{
+    color: var(--black);
+}
+.container-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20rem;
+}
+.container-contact > p{
+    font-size: 0.6rem;
+}
+.user{
+    font-size: 1rem;
+}
+.socials{
+    width: 80%;
+    max-width: 70rem;
+    margin: 0 auto;
+    word-spacing: 0;
+}
+.social-icon{
+    width: 1.4rem;
+    transition: transform .5s ease;
+}
+.social-icon:hover{
+    transform: translateY(-0.3rem);
+    opacity: 0.8;
+}
+@media (min-width:60rem){
+    .container-contact{
+        height: 30rem;
+    }
+    .social-icon{
+        width: 4rem;
+    }
+    .user{
+        font-size: 3rem;
+    }.socials{
+        word-spacing: 1.5rem;
+    }
+    .container-contact > p{
+        font-size: 1.2rem;
+    }
+}
+@media (min-width:30rem) and (max-width:60rem) {
+    .social-icon{
+        width: 2rem;
+    }
+    .user{
+        font-size: 2rem;
+    }
+    .container-contact{
+        height: 30rem;
+    }
+    .container-contact > p{
+        font-size: 1rem;
+    }
+}
+

@@ -1,0 +1,50 @@
+#navbar{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: 1rem;
+    right: 1rem;
+    text-align: left;
+}
+.nav-home::before{
+    content: "1";
+}
+.nav-about::before{
+    content: "2";
+}
+.nav-proj::before{
+    content: "3";
+}
+.nav-contact::before{
+    content: "4";
+}
+a{
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+    color: var(--black);
+    transition: transform .5s ease;
+}
+a:hover{
+    color: var(--primary);
+    transform: translateY(-0.3rem);
+}
+@media (min-width:60rem){
+    #navbar{
+        bottom: 3rem;
+        right: 3rem;
+    }
+    .nav-home::before{
+        content: "home";
+    }
+    .nav-about::before{
+        content: "about me";
+    }
+    .nav-proj::before{
+        content: "my proyects";
+    }
+    .nav-contact::before{
+        content: "contact";
+    }
+}

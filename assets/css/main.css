@@ -1,0 +1,86 @@
+:root{
+    --purple:hsl(273, 75%, 66%);
+    --black:#190F26;
+    --primary:#2CF2E5;
+    --primary-light:#D1EDEC;
+    --secondary:#EBE2F3;
+}
+html{
+    box-sizing: border-box;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+    scroll-behavior:smooth;
+}
+body{
+    background: linear-gradient(var(--purple),var(--primary));
+    font-family: 'Fira Code', monospace;
+    text-align: center;
+    color: var(--secondary);  
+}
+section{
+    margin-bottom: 5.2rem;
+}
+h1,h2,h3,p{
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+}
+p{
+    font-size: 1rem;
+}
+h2{
+    font-size: 2rem;
+    padding: 4.5rem 0 4rem 0;
+}
+h1,h2{
+    color: var(--primary);
+}
+.container{
+    margin: 0 auto;
+    width: 80%;
+    max-width:75rem;
+}
+.card{
+    border-radius: 1.5rem;
+    background-color: var(--black);
+    padding: 3rem;
+    box-shadow: 0px 0px 50px 0 rgba(0, 0, 0, 0.1);
+}
+.col{
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    max-width:75rem;
+}
+.col-2{
+    grid-template-columns: 1fr;
+    gap:2rem;
+}
+.col-3{
+    grid-template-columns: 1fr;
+}
+
+@media (min-width:60rem){
+    .col-2{
+        grid-template-columns: 1fr 1fr;
+    }
+    .col-3{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 6rem;
+    }
+}
+@media (min-width:30rem) and (max-width:60rem) {
+    p{
+        font-size: 1.2rem;
+    }
+    h2{
+        font-size: 4rem;
+        padding: 4.5rem 0 4rem 0;
+    }
+}
