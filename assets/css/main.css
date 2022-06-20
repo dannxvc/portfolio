@@ -11,6 +11,7 @@ html{
 *, *::after, *::before{
     box-sizing: inherit;
     scroll-behavior:smooth;
+    transition: .3s ease-in-out;
 }
 body{
     background: linear-gradient(var(--purple),var(--primary));
@@ -19,7 +20,7 @@ body{
     color: var(--secondary);  
 }
 section{
-    margin-bottom: 5.2rem;
+    min-height: 100vh;
 }
 h1,h2,h3,p{
     padding: 0;

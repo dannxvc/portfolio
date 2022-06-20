@@ -7,52 +7,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="assets/css/styles.css">
-    <script defer src="/assets/js/scroll.js"></script>
     <title>Danna Vila</title>
 </head>
 <body>
     <header id="home">
         <p>hi! i am</p>
-        <h1 id="title" class="text_shadows revealUp">danna.</h1>
+        <div>
+            <h1 id="title" class="element"></h1>
+        </div>
         <p>
             i create things, design and develop interfaces. i have great interest in frontend and backend development.
         </p>
     </header>
-    <nav id="navbar">
-        <a class="nav-home" href="#home"></a>
-        <a class="nav-about" href="#about-me"></a>
-        <a class="nav-proj"  href="#my-projects"></a>
-        <a class="nav-contact" href="#contact"></a>
+    <nav id="navbar" data-aos="fade-up"  >
+        <a class="nav-hover nav-home " href="#home"></a>
+        <a  class="nav-hover nav-about" href="#about-me"></a>
+        <a class="nav-hover nav-proj"  href="#my-projects"></a>
+        <a class="nav-hover nav-contact" href="#contact"></a>
     </nav>
     <main>
-        <section id="about-me">
-            <h2 class="revealUp">about me.</h2>
+        <section id="about-me" >
+            <h2>about me.</h2>
             <div class="container card bg-primary">
-                <p>
+                <p data-aos="slide-up">
+                    <!-- data-aos="slide-up" -->
                     i am a fourth year software developer student at the technological university of peru. i am also an self-taught person.
                 </p>  
             </div>
-            <p class="tec">technologies i’ve been working with:</p>
+            <p class="tec" data-aos="slide-up">technologies i’ve been working with:</p>
                 <div class="col">
                     <div id="card-tec">
-                        <p>html5</p>
+                        <p data-aos="slide-up">html5</p>
                         <img class="tec-icon" src="assets/img/icons/html.svg" alt="html icon">
                     </div>
                     <div id="card-tec">
-                        <p>css</p>
+                        <p data-aos="slide-up">css</p>
                         <img class="tec-icon" src="assets/img/icons/css-icon.svg" alt="css icon">
                     </div>
                     <div id="card-tec">
-                        <p>javascript ES6+</p>
+                        <p data-aos="slide-up">javascript ES6+</p>
                         <img class="tec-icon" src="assets/img/icons/js-icon.svg" alt="css icon">
                     </div>
                     <div id="card-tec">
-                        <p>react.js</p>
+                        <p data-aos="slide-up">react.js</p>
                         <img class="tec-icon" src="assets/img/icons/react-icon.svg" alt="css icon">
                     </div>
                     <div id="card-tec">
-                        <p>sql</p>
+                        <p data-aos="slide-up">sql</p>
                         <img class="tec-icon" src="assets/img/icons/sql-icon.svg" alt="css icon">
                     </div>
                 </div>
@@ -60,7 +61,7 @@
         <section id="my-projects">
             <h2>my projects.</h2>
             <div class="col col-2">
-                <figure id="project" class="card container bg-primary">
+                <figure id="project" class="card container bg-primary"data-aos="zoom-in" >
                     <img class="project-img" src="assets/img/projects/faq-acc.jpg" alt="project tictactoe">
                     <figcaption>
                         FAQ accordion
@@ -75,9 +76,9 @@
                         </div>
                     </figcaption>
                 </figure>
-                <figure id="project" class="card container">
+                <figure id="project" class="card container" data-aos="zoom-in">
                     <img class="project-img" src="assets/img/projects/grid.jpg" alt="project tictactoe">
-                    <figcaption>
+                    <figcaption >
                         grid challenge
                         <span>html5/css</span>
                         <div>
@@ -90,16 +91,16 @@
                         </div>
                     </figcaption>
                 </figure>
-                <figure id="project"  class="card container">
+                <figure id="project" class="card container" data-aos="zoom-in">
                     <img class="project-img" src="assets/img/projects/portfolio.png" alt="project tictactoe">
                     <figcaption>
                         portfolio
                         <span>html5/css/js</span>
                         <div>
-                            <a href="https://github.com/dannxvc">
+                            <a href="https://github.com/dannxvc/portfolio" target="_blank">
                                 <img class="proj-icon" src="assets/img/icons/github-icon.svg" alt="github link">
                             </a>
-                            <a href="https://github.com/dannxvc">
+                            <a href="https://github.com/dannxvc" target="_blank">
                                 <img class="proj-icon" src="assets/img/icons/link.svg" alt="web live link">
                             </a>
                         </div>
@@ -112,9 +113,9 @@
         <section id="contact">
             <h2>contact.</h2>
             <div class="card container container-contact">
-                <h3 class="user">@dannxvc</h3>
-                <p>Feel free to leave a message in any of my socials.</p>
-                <div class="socials">
+                <h3 class="user" data-aos="slide-up">@dannxvc</h3>
+                <p data-aos="slide-up">Feel free to leave a message in any of my socials.</p>
+                <div class="socials" data-aos="slide-up">
                     <a href="https://github.com/dannxvc">
                         <img class="social-icon" src="assets/img/icons/github-icon.svg" alt="github link">
                     </a>
@@ -133,9 +134,10 @@
     </main>
     <footer id="footer">
         <div>
-            <span>Designed and Built by <b>Danna Vila.</b> </span>
+            <span>Designed and Built by <b><a href="https://github.com/dannxvc">Danna Vila.</a></b> </span>
         </div>
         <span>All rights reserved. ©</span>
     </footer>
+    
 </body>
 </html>

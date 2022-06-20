@@ -1,6 +1,7 @@
 #my-projects>h2{
     color: var(--secondary);
 }
+
 #project{
     width: 80%;
     padding: 1rem;
@@ -35,6 +36,9 @@ span{
     opacity: 0.8;
 }
 @media (min-width:60rem){
+    #my-projects>div{
+        width: 80%;
+    }
     #project{
         width: 100%;
     }

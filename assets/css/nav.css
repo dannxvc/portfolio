@@ -4,19 +4,45 @@
     flex-direction: column;
     bottom: 1rem;
     right: 1rem;
-    text-align: left;
+    text-align: right;
+    z-index: 2;
 }
-.nav-home::before{
-    content: "1";
+.nav-hover{
+    font-size: 1rem;
 }
-.nav-about::before{
+.nav-home::after{
+    content: "1";   
+}
+.nav-about::after{
     content: "2";
 }
-.nav-proj::before{
+.nav-proj::after{
     content: "3";
 }
-.nav-contact::before{
+.nav-contact::after{
     content: "4";
+}
+
+.nav-home:hover::before{
+    content: "home";
+}
+.nav-about:hover::before{
+    content: "about";
+}
+.nav-proj:hover::before{
+    content: "proyects";
+}
+.nav-contact:hover::before{
+    content: "contact";
+    color: var(--purple);
+}
+.nav-hover:hover::before{ 
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: left;
+    position: absolute;
+    bottom:9rem;
+    right: -0.6rem;
 }
 a{
     font-size: 1.4rem;
@@ -30,21 +56,46 @@ a:hover{
     color: var(--primary);
     transform: translateY(-0.3rem);
 }
-@media (min-width:60rem){
+@media (min-width:45rem) and (max-width:90rem){
+    .nav-hover{
+        font-size: 1.8rem;
+    }
+}
+@media (min-width:90rem){
     #navbar{
         bottom: 3rem;
         right: 3rem;
+        text-align: left;
+    }
+    .nav-hover{
+        font-size: 1.5rem;
     }
     .nav-home::before{
         content: "home";
     }
     .nav-about::before{
-        content: "about me";
+        content: "about";
     }
     .nav-proj::before{
-        content: "my proyects";
+        content: "proyects";
     }
     .nav-contact::before{
         content: "contact";
+    }
+    .nav-hover:hover::before{ 
+        writing-mode:horizontal-tb;
+        position: initial;
+    }
+    .nav-home::after{
+        content: "";   
+    }
+    .nav-about::after{
+        content: "";
+    }
+    .nav-proj::after{
+        content: "";
+    }
+    .nav-contact::after{
+        content: "";
     }
 }

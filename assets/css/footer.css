@@ -4,3 +4,22 @@
     color: var(--black);
     padding: 3rem 3rem;
 }
+#footer a{
+    font-size: 0.7rem;
+    font-style: normal;
+    transition: .3s ease-in-out;
+}
+#footer a:hover{
+    color: var(--purple);
+}
+
+@media (min-width:60rem){
+    #footer a{
+        font-size: 1.4rem;
+    }
+}
+@media (min-width:30rem) and (max-width:60rem) {
+    #footer a{
+        font-size: 1rem;
+    }
+}

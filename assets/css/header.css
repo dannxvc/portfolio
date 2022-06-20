@@ -4,19 +4,45 @@
     width: 80%;
     max-width:55rem ;
     margin: 0 auto;
-    padding: 19rem 0;
+    padding: 70% 0;
+}
+#home>div{
+  display: flex;
+  align-items: top;
 }
 #title{
     font-size: 3rem;
+    min-height: 4rem;
 }
+.typed-cursor {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin: 0;
+}
+
   
 @media (min-width:60rem){
+    #home{
+       padding: 18% 0;
+    } 
     #title{
         font-size: 10rem;
+        height: 12rem;
     }
+    .typed-cursor {
+      font-size: 8rem;
+    }
+
 }
 @media (min-width:30rem) and (max-width:60rem) {
+    #home{
+      padding: 60% 0;
+     }
     #title{
-        font-size: 6rem;
+      font-size: 5.2rem;
+      height: 6rem;
+    }
+    .typed-cursor {
+      font-size: 4.1rem;
     }
 }
