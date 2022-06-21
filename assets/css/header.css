@@ -4,7 +4,7 @@
     width: 80%;
     max-width:55rem ;
     margin: 0 auto;
-    padding: 70% 0;
+    padding: 10% 0;
 }
 #home>div{
   display: flex;
@@ -23,7 +23,7 @@
   
 @media (min-width:60rem){
     #home{
-       padding: 18% 0;
+       padding: 17% 0;
     } 
     #title{
         font-size: 10rem;
@@ -36,7 +36,7 @@
 }
 @media (min-width:30rem) and (max-width:60rem) {
     #home{
-      padding: 60% 0;
+      padding: 20% 0;
      }
     #title{
       font-size: 5.2rem;

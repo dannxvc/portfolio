@@ -1,8 +1,11 @@
 #footer{
     display: flex;
     flex-direction: column;
-    color: var(--black);
     padding: 3rem 3rem;
+}
+#footer span{
+    font-size: 0.7rem;
+    color: var(--black);
 }
 #footer a{
     font-size: 0.7rem;
@@ -17,9 +20,15 @@
     #footer a{
         font-size: 1.4rem;
     }
+    #footer span{
+        font-size: 1.4rem;
+    }
 }
 @media (min-width:30rem) and (max-width:60rem) {
     #footer a{
+        font-size: 1rem;
+    }
+    #footer span{
         font-size: 1rem;
     }
 }

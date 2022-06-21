@@ -12,7 +12,7 @@ AOS.init({
 import Typed from 'typed.js/src/typed.js';
 var options = {
     strings: ["hi! i'm", 'danna.'],
-    typeSpeed: 60
+    typeSpeed: 100
   };
   
 var typed = new Typed('.element', options);

@@ -1,13 +1,13 @@
 #my-projects>h2{
-    color: var(--secondary);
+    color: var(--black);
 }
-
 #project{
     width: 80%;
-    padding: 1rem;
+    padding: 0.3rem;
     padding-bottom: 3rem;
     transition: transform .5s ease;
-    background-color: transparent;
+    background-color: transparent; 
+  /*   background: var(--trans); */
 }
 #project:hover{
     transform: translateY(-0.3rem);
@@ -18,13 +18,18 @@
     border-radius: 1rem;
 }
 figcaption{
-    font-size: 1rem;
+    font-size: 1.3rem;
     display: flex;
     flex-direction: column;
+    color: var(--secondary);
+    font-weight: 500;
 }
 span{
     margin-top: .5rem;
-    font-size: 0.7rem;
+    font-size: 1rem;
+    color: var(--secondary);
+    font-weight: normal;
+
 }
 .proj-icon{
     margin-top: 2rem;
@@ -41,6 +46,8 @@ span{
     }
     #project{
         width: 100%;
+    padding: 1rem;
+
     }
     figcaption{
         font-size: 2rem;
@@ -56,6 +63,6 @@ span{
     }
     span{
         margin-top: .5rem;
-        font-size: 1.2rem;
+        font-size: 1.7rem;
     }
 }

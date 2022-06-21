@@ -1,5 +1,6 @@
 :root{
     --purple:hsl(273, 75%, 66%);
+    --purple-dark:#7E698C;
     --pink:#FF3B77;/* #D904A0; */
     --black:#190F26;
     --primary:#2CF2E5;
@@ -21,7 +22,7 @@ body{
     color: var(--secondary);  
 }
 section{
-    min-height: 100vh;
+    min-height: 80vh;
 }
 h1,h2,h3,p{
     padding: 0;
@@ -32,10 +33,12 @@ p{
     font-size: 1rem;
 }
 h2{
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 4.5rem 0 4rem 0;
+    color: var(--black);
+
 }
-h1,h2{
+h1{
     color: var(--primary);
 }
 .container{
@@ -46,6 +49,7 @@ h1,h2{
 .card{
     border-radius: 1.5rem;
     background-color: var(--black);
+   /*  background-color: transparent; */
     padding: 3rem;
     box-shadow: 0px 0px 50px 0 rgba(0, 0, 0, 0.1);
 }
@@ -57,7 +61,7 @@ h1,h2{
 }
 .col-2{
     grid-template-columns: 1fr;
-    gap:2rem;
+    gap:3rem;
 }
 .col-3{
     grid-template-columns: 1fr;
