@@ -30,7 +30,7 @@
     content: "about";
 }
 .nav-proj:hover::before{
-    content: "proyects";
+    content: "projects";
 }
 .nav-contact:hover::before{
     content: "contact";
@@ -77,7 +77,7 @@ a:hover{
         content: "about";
     }
     .nav-proj::before{
-        content: "proyects";
+        content: "projects";
     }
     .nav-contact::before{
         content: "contact";

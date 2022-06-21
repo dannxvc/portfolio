@@ -26,6 +26,9 @@
     opacity: 1;
     transform: translate(-60px, 0px);
 }
+.strong-p{
+    color: var(--pink);
+}
 @media (min-width:60rem){
     .tec{
         font-size: 2rem;
