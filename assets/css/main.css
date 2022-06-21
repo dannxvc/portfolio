@@ -1,10 +1,12 @@
 :root{
     --purple:hsl(273, 75%, 66%);
-    --purple-dark:#7E698C;
-    --pink:#FF3B77;/* #D904A0; */
+    /* #af67e9 */
+   /*  --pink:#FF3B77; *//* #D904A0; */
     --black:#190F26;
-    --primary:#2CF2E5;
-    --primary-light:#D1EDEC;
+    /* --primary:#2CF2E5; */
+    --primary:#5DFCFF;
+    
+    --primary-light:#D9FEFF;
     --secondary:#EBE2F3;
 }
 html{
@@ -17,9 +19,10 @@ html{
 }
 body{
     background: linear-gradient(var(--purple),var(--primary));
-    font-family: 'Fira Code', monospace;
+    /* font-family: 'Fira Code', monospace; */
+    font-family: 'Work Sans', sans-serif;
     text-align: center;
-    color: var(--secondary);  
+    color: var(--primary-light);  
 }
 section{
     min-height: 80vh;
@@ -30,13 +33,12 @@ h1,h2,h3,p{
     font-weight: 500;
 }
 p{
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 h2{
     font-size: 3rem;
     padding: 4.5rem 0 4rem 0;
     color: var(--black);
-
 }
 h1{
     color: var(--primary);
@@ -51,7 +53,7 @@ h1{
     background-color: var(--black);
    /*  background-color: transparent; */
     padding: 3rem;
-    box-shadow: 0px 0px 50px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 50px 0 rgba(0, 0, 0, 0.4);
 }
 .col{
     display: grid;
@@ -83,7 +85,7 @@ h1{
 }
 @media (min-width:30rem) and (max-width:60rem) {
     p{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     h2{
         font-size: 4rem;

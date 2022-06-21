@@ -1,3 +1,6 @@
+#my-projects{
+    margin-top: 6rem;
+}
 #my-projects>h2{
     color: var(--black);
 }
@@ -6,13 +9,13 @@
     padding: 0.3rem;
     padding-bottom: 3rem;
     transition: transform .5s ease;
-    background-color: transparent; 
-  /*   background: var(--trans); */
+    background: var(--primary-light);
 }
 #project:hover{
     transform: translateY(-0.3rem);
 }
 .project-img{
+    opacity: 0.8;
     margin-bottom: 1rem;
     width: 100%;
     border-radius: 1rem;
@@ -21,14 +24,16 @@ figcaption{
     font-size: 1.3rem;
     display: flex;
     flex-direction: column;
-    color: var(--secondary);
-    font-weight: 500;
+    color: var(--black);
+   /*  color: var(--purple-dark); */
+    font-weight: 600;
 }
 span{
     margin-top: .5rem;
     font-size: 1rem;
-    color: var(--secondary);
-    font-weight: normal;
+    color: var(--black);
+    /* color: var(--purple-dark); */
+    font-weight: 400;
 
 }
 .proj-icon{

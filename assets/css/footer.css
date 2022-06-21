@@ -4,11 +4,11 @@
     padding: 3rem 3rem;
 }
 #footer span{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color: var(--black);
 }
 #footer a{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-style: normal;
     transition: .3s ease-in-out;
 }
