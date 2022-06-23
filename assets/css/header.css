@@ -11,7 +11,7 @@
   align-items: top;
 }
 #title{
-    font-size: 3rem;
+    font-size: 4rem;
     min-height: 4rem;
 }
 .typed-cursor {
@@ -19,7 +19,6 @@
   color: var(--primary);
   margin: 0;
 }
-
   
 @media (min-width:60rem){
     #home{
