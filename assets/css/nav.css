@@ -34,7 +34,6 @@
 }
 .nav-contact:hover::before{
     content: "contact";
-    color: var(--purple);
 }
 .nav-hover:hover::before{ 
     writing-mode: vertical-rl;

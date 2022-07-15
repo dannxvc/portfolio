@@ -13,7 +13,7 @@
     transition: .3s ease-in-out;
 }
 #footer a:hover{
-    color: var(--purple);
+    color: var(--primary);
 }
 
 
