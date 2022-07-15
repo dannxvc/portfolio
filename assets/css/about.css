@@ -1,9 +1,12 @@
 @import url(main.css);
 .card-about{
-    background: var(--primary-light);
+    background: transparent;
+    box-shadow: none;
+    width: 100%;
+    max-width: 40rem;
 }
 .p-dark{
-    color: var(--black);
+    color: var(--primary-light);
 }
 ul{
     padding: 0;
@@ -16,6 +19,8 @@ li{
     align-items: center;
 }
 .card-tec{
+    width: 85%;
+    max-width: 60rem;
     margin-top: 1rem;
 }
 .col-tec{
@@ -26,7 +31,7 @@ li{
     margin-right: 0.3rem;
 }
 .strong-p{
-    color: var(--purple);
+    color: var(--primary);
 }
 .tec{
     margin: 1.4rem 0 1.4rem 0;

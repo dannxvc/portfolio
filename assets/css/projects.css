@@ -1,15 +1,13 @@
 #my-projects{
     margin-top: 6rem;
 }
-#my-projects>h2{
-    color: var(--black);
-}
 #project{
     padding: 1rem;
     padding-bottom: 3rem;
     transition: transform .5s ease;
-    /* background: var(--primary-light); */
-    background: var(--black);
+    /* background: var(--black); */
+    background: transparent;
+
 }
 #project:hover{
     transform: translateY(-0.3rem);
@@ -28,25 +26,24 @@ figcaption{
     display: flex;
     flex-direction: column;
     color: var(--primary-light);
-    /* color: var(--black); */
     font-weight: 600;
 }
 span{
     margin-top: .5rem;
     font-size: 1rem;
     color: var(--primary-light);
-    font-weight: 400;
+    font-weight: 500;
 }
 details{
     font-size: 1rem;
     font-weight: 300;
     padding: 0.5rem;
-    color: var(--gray);
+    color: var(--secondary);
 }
 summary{
     cursor: pointer;
     font-weight: 500;
-    color: var(--gray);
+    color: var(--secondary);
     padding: 0.5rem;
 }
 summary:hover{
@@ -86,6 +83,5 @@ summary::marker{
         font-weight: 300;
         margin-top: .5rem;
         font-size: 1.2rem;
-        color: var(--gray);
     }
 }

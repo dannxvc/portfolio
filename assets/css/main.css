@@ -1,17 +1,19 @@
 :root{
-    /* --purple:hsl(273, 75%, 66%); */
-    /* --purple:hsl(273, 78%, 78%); */
-    --purple:hsl(258, 51%, 63%);
-    --black-transparent:rgba(27, 16, 41,0.8);
-
-    /* #af67e9 */
-   /*  --pink:#FF3B77; *//* #D904A0; */
-    --black:#190F26;
-    --gray:#a091b3;
     --primary:#5DFCFF;
-    
     --primary-light:#D9FEFF;
-    --secondary:#EBE2F3;
+    --secondary:hsl(256, 33%, 89%);
+    --purple:hsl(258, 51%, 63%);
+    --black:#190F26;
+    /* --gray:#a091b3; */
+    --gray:hsl(257, 46%, 74%);
+
+    /* --purple:hsl(256, 31%, 86%);
+    --black-transparent:rgba(27, 16, 41,0.8);
+    --black:#000000;
+    --gray:#f6f5f8;
+    --primary:#060707;
+    --primary-light:#D9FEFF;
+    --secondary:#EBE2F3; */
 }
 html{
     box-sizing: border-box;
@@ -27,7 +29,8 @@ html{
 }
 body{
     background: linear-gradient(var(--purple),var(--gray));
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Playfair Display', serif; */
     text-align: center;
     color: var(--primary-light);  
 }
@@ -40,12 +43,12 @@ h1,h2,h3,p{
     font-weight: 500;
 }
 p{
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 h2{
     font-size: 3rem;
-    padding: 4.5rem 0 4rem 0;
-    color: var(--black);
+    padding: 4.5rem 0 3rem 0;
+    color: var(--primary-light);
 }
 h1{
     color: var(--primary);
@@ -80,9 +83,6 @@ h1{
 }
 
 @media (min-width:30rem) and (max-width:50rem) {
-    p{
-        font-size: 1.4rem;
-    }
     h2{
         font-size: 4rem;
         padding: 4.5rem 0 4rem 0;
@@ -99,7 +99,7 @@ h1{
 }
 @media (min-width:70rem){
     .card{
-        padding: 3rem;
+        padding: 1.5rem;
     }
     /* .col-2{
         grid-template-columns: 1fr 1fr 1fr;

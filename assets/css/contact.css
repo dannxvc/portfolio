@@ -2,9 +2,6 @@
     min-height: 60vh;
     margin-top: 6rem;
 }
-#contact>h2{
-    color: var(--black);
-}
 .container-contact{
     display: flex;
     flex-direction: column;
