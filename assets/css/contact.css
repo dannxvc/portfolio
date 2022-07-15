@@ -27,10 +27,11 @@
 .social-icon{
     width: 1.4rem;
     transition: transform .5s ease;
+    opacity: 0.4;
 }
 .social-icon:hover{
     transform: translateY(-0.3rem);
-    opacity: 0.8;
+    opacity: 1;
 }
 @media (min-width:60rem){
     #contact{

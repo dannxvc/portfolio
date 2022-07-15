@@ -16,15 +16,8 @@
     color: var(--purple);
 }
 
-@media (min-width:60rem){
-    #footer a{
-        font-size: 1.4rem;
-    }
-    #footer span{
-        font-size: 1.4rem;
-    }
-}
-@media (min-width:30rem) and (max-width:60rem) {
+
+@media (min-width:30rem) {
     #footer a{
         font-size: 1rem;
     }

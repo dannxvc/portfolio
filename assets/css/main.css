@@ -1,9 +1,13 @@
 :root{
-    --purple:hsl(273, 75%, 66%);
+    /* --purple:hsl(273, 75%, 66%); */
+    /* --purple:hsl(273, 78%, 78%); */
+    --purple:hsl(258, 76%, 64%);
+    --black-transparent:rgba(27, 16, 41,0.8);
+
     /* #af67e9 */
    /*  --pink:#FF3B77; *//* #D904A0; */
     --black:#190F26;
-    /* --primary:#2CF2E5; */
+    --gray:#a091b3;
     --primary:#5DFCFF;
     
     --primary-light:#D9FEFF;
@@ -49,8 +53,8 @@ h1{
 }
 .container{
     margin: 0 auto;
-    width: 80%;
-    max-width:75rem;
+    width: 85%;
+    max-width:80rem;
 }
 .card{
     border-radius: 1.5rem;
@@ -66,22 +70,37 @@ h1{
     display: grid;
     margin: 0 auto;
     width: 100%;
-    max-width:75rem;
+    max-width: 60rem;
 }
 .col-2{
     grid-template-columns: 1fr;
-    gap:3rem;
+    gap:1.5rem;
 }
 .col-3{
     grid-template-columns: 1fr;
 }
 
-@media (min-width:60rem){
+@media (min-width:30rem) and (max-width:50rem) {
+    p{
+        font-size: 1.4rem;
+    }
+    h2{
+        font-size: 4rem;
+        padding: 4.5rem 0 4rem 0;
+    }
+    .col-3{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media (min-width:50rem) and (max-width:70rem){
+    .col-3{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:70rem){
     .card{
         padding: 3rem;
-    }
-    .col-2{
-        grid-template-columns: 1fr 1fr;
     }
     .col-3{
         grid-template-columns: 1fr 1fr 1fr;
@@ -90,15 +109,9 @@ h1{
         font-size: 1.5rem;
     }
     h2{
-        font-size: 6rem;
+        font-size: 5rem;
     }
-}
-@media (min-width:30rem) and (max-width:60rem) {
-    p{
-        font-size: 1.4rem;
-    }
-    h2{
-        font-size: 4rem;
-        padding: 4.5rem 0 4rem 0;
+    .col-2{
+        grid-template-columns: 1fr 1fr;
     }
 }
